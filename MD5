@@ -1,0 +1,16 @@
+aa36d68b74cd62f0b39a80f6b2e7bc42 *DESCRIPTION
+b099dff8188a944ea4fb9514318f861e *NAMESPACE
+7f1f4ffccbf700cee382690c6f3df70b *R/httr.R
+66b9eb5fef96cbc3dcb67e6ce1083bb7 *README.md
+9e1fa4d6463aeedf1de11501181e3c3b *man/docu_auth.Rd
+b11dd8f76dbafc61fc4034f0590fb8c2 *man/docu_download.Rd
+600c731114d9e3b3b5fa4fba31954faa *man/docu_embedded_sign.Rd
+9d8f6582d66e97c0debee3fce68783ed *man/docu_envelope.Rd
+f9a1eb6d1d92078a8215c25e54d86f94 *man/docu_header.Rd
+35cb9159266591dd8a7b5be68ebd503f *man/docu_login.Rd
+6d8cedb6dbc9b1a67fcd6ec1dc656cdf *man/parse_response.Rd
+dc229dda19ed5028a1c3a572b24b5ec1 *tests/testthat.R
+ee2cecfd2c844dd117620d91ac27b478 *tests/testthat/test-1-login.R
+494b085351ca59a13d7f7eed92cec1ed *tests/testthat/test-2-signing.R
+aa08a49df4d930c1f92e8b51c9358d33 *tests/testthat/test-3-sending.R
+d18fc618db834bf8997922eb6aa809e2 *tests/testthat/test-4-download.R
