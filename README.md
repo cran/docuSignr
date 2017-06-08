@@ -1,5 +1,5 @@
 
-[![Build Status](https://travis-ci.org/CannaData/docuSignr.svg?branch=master)](https://travis-ci.org/CannaData/docuSignr)[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/CannaData/docuSignR?branch=master&svg=true)](https://ci.appveyor.com/project/CannaData/docuSignR)[![Coverage Status](https://img.shields.io/codecov/c/github/CannaData/docuSignr/master.svg)](https://codecov.io/github/CannaData/docuSignr?branch=master)
+[![Build Status](https://travis-ci.org/CannaData/docuSignr.svg?branch=master)](https://travis-ci.org/CannaData/docuSignr)[![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/CannaData/docuSignR?branch=master&svg=true)](https://ci.appveyor.com/project/CannaData/docuSignR)
 
 docuSignr
 =========
@@ -11,9 +11,12 @@ The `docuSignr` package uses `httr` to embed DocuSign into Shiny applications.
 Installation
 ============
 
-`docuSignr` is only available on Github at the moment.
+`docuSignr` is available on CRAN and Github.
 
 ``` r
+# from CRAN
+install.packages("docuSignr")
+# from Github
 devtools::install_github("CannaData/docuSignr")
 ```
 
@@ -33,9 +36,9 @@ Set-Up
 It is recommended that you set the DocuSign username, password, and integrator key as environmental variables idealy in your .Rprofile.
 
 ``` r
-Sys.setenv(docuSign_username = "username")
-Sys.setenv(docuSign_password = "password")
-Sys.setenv(docuSign_integrator_key = "integrator_key")
+Sys.setenv("docuSign_username" = "username")
+Sys.setenv("docuSign_password" = "password")
+Sys.setenv("docuSign_integrator_key" = "integrator_key")
 ```
 
 Example
@@ -45,13 +48,13 @@ Example
 library(docuSignr)
 # login to get baseURL and accountID
 login <- docu_login()
-# choose template
-template_id <- "e86ad42d-f935-4a95-8019-c9e2c902de15"
+# load templates
+templates <- docu_templates(base_url = login[1, "baseUrl"])
 # create envelope
 envelope <- docu_envelope(
   account_id = login[1, "accountId"],
   base_url = login[1, "baseUrl"],
-  template_id = template_id,
+  template_id = templates[1, "templateId"],
   template_roles = list(
     email = "example@example.com",
     name = "R-Test",
