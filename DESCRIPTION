@@ -1,6 +1,6 @@
 Package: docuSignr
 Title: Connect to 'DocuSign' API
-Version: 0.0.2
+Version: 0.0.3
 Authors@R: c(
   person("Carl", "Ganz", email = "carl@cannadatasolutions.com", role = c("aut", "cre")),
   person("CannaData Solutions", role = "cph")
@@ -13,13 +13,13 @@ Encoding: UTF-8
 LazyData: true
 Imports: httr, jsonlite, magrittr
 RoxygenNote: 6.0.1
-Suggests: testthat, covr
+Suggests: testthat, covr, drat
 URL: https://github.com/CannaData/docuSignr
 BugReports: https://github.com/CannaData/docuSignr/issues
 NeedsCompilation: no
-Packaged: 2017-06-08 20:39:45 UTC; carl
+Packaged: 2017-10-22 02:03:25 UTC; carl
 Author: Carl Ganz [aut, cre],
   CannaData Solutions [cph]
 Maintainer: Carl Ganz <carl@cannadatasolutions.com>
 Repository: CRAN
-Date/Publication: 2017-06-08 23:07:16 UTC
+Date/Publication: 2017-10-22 03:09:17 UTC
